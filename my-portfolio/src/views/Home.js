@@ -10,7 +10,7 @@ const Home = () => {
 				<div className="flex-grow p-4 flex flex-col justify-center items-center">
 					<img
 						src="yalda.png"
-						className="mb-8 w-64 rounded-full shadow-lg border-white border-2 bg-slate-300 md:max-w-lg"
+						className="mb-8 w-64 rounded-full shadow-lg border-white border-2 bg-slate-300 md:w-96 md:max-w-3xl"
 						alt="profile"
 					/>
 					<h1 className="text-2xl text-center text-slate-200">

@@ -36,7 +36,7 @@ const Accordion = ({ title, content, initialHeight = "0px", tags }) => {
 							className={`text-slate-500 text-xl ${chevronClass}`}
 						/>
 					</div>
-					<div className="flex gap-1">
+					<div className="flex gap-1 flex-wrap">
 						{tags?.map((tag) => (
 							<span className="bg-teal-700 w-fit rounded-full text-xs text-white px-2 py-1 ">
 								{tag}

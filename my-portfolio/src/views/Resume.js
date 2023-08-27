@@ -72,7 +72,7 @@ const Resume = () => {
 				</div>
 				<div>
 					<h1 className="text-lg font-semibold mb-4">Main Technical Skills:</h1>
-					<div className="grid grid-cols-3">
+					<div className="grid grid-cols-2 md:grid-cols-3">
 						<ProgressBar percent="90" label="JavaScript" />
 						<ProgressBar percent="80" label="TypeScript" />
 						<ProgressBar percent="90" label="React" />

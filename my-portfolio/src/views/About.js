@@ -17,13 +17,14 @@ const About = () => {
 							been working as a frontend developer, specializing in creating
 							user-friendly web interfaces.
 						</p>
+
 						<p className="mb-4 text-sm md:text-base">
 							My engineering background has given me a unique perspective in
 							problem-solving. It has allowed me to approach programming
 							challenges with a blend of scientific principles and creativity,
 							resulting in innovative solutions.
 						</p>
-						<p>
+						<p className="mb-4 text-sm md:text-base">
 							I'm enthusiastic about continuously learning and staying updated
 							in the ever-evolving tech field. My experience as a frontend
 							developer has been marked by a commitment to excellence and a
