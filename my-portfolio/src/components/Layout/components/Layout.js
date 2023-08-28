@@ -9,7 +9,7 @@ const Layout = ({ title, children }) => {
 				<title>{title}</title>
 				<meta name="description" content="Yalda Karimi's portfolio"></meta>
 			</Helmet>
-			<main className={`${location.pathname !== "/" && "container mx-auto"}`}>
+			<main >
 				{children}
 			</main>
 			{/* <Footer /> */}

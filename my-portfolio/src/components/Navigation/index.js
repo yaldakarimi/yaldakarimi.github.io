@@ -13,7 +13,9 @@ const Navbar = ({ navLinkColor, color }) => {
 		{ name: "Resume", href: "/resume" },
 	];
 	return (
-		<nav className={"flex justify-between items-center px-6 py-4"}>
+		<nav
+			className={"flex justify-between items-center px-6 py-4 md:px-10 md:py-8"}
+		>
 			<ul className="flex gap-3">
 				{navLinks.map(({ name, href }) => (
 					<li className="text-sm" key={name}>

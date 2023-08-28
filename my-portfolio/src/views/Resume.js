@@ -43,7 +43,7 @@ const Resume = () => {
 				<div className="mb-4">
 					<Navbar />
 				</div>
-				<div>
+				<div className="container mx-auto">
 					<div className="p-4">
 						<Card customClasses="flex justify-between items-center gap-2 ">
 							<h1 className="text-sm md:text-base">Click to download my CV</h1>
