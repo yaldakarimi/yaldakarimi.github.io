@@ -1,11 +1,14 @@
-import { Layout, Card } from "components";
+import { Layout, Card, Navbar } from "components";
 
 const About = () => {
 	return (
-		<div>
-			<Layout title={"About me"}>
+		<Layout title={"About me"}>
+			<div className="min-h-screen flex flex-col bg-slate-800">
+				<div className="mb-4">
+					<Navbar />
+				</div>
 				<div className="p-4">
-					<Card className="shadow-md border border-slate-50 p-4 rounded-md bg-slate-100">
+					<Card>
 						<h1 className="font-bold text-lg mb-4">My background:</h1>
 						<p className="mb-4 text-sm md:text-base">
 							I'm Yalda Karimi and I am an enthusiastic self-taught frontend
@@ -34,8 +37,8 @@ const About = () => {
 						</p>
 					</Card>
 				</div>
-			</Layout>
-		</div>
+			</div>
+		</Layout>
 	);
 };
 

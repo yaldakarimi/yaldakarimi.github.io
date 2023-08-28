@@ -30,15 +30,15 @@ const Accordion = ({ title, content, initialHeight = "0px", tags }) => {
 				onClick={toggleAccordion}
 			>
 				<div className="flex flex-col  ">
-					<div className="flex justify-between mb-2 font-semibold">
+					<div className="flex justify-between mb-2 font-semibold text-sm">
 						<span>{title}</span>
 						<FaChevronCircleDown
-							className={`text-slate-500 text-xl ${chevronClass}`}
+							className={`text-slate-500 text-2xl ${chevronClass}`}
 						/>
 					</div>
 					<div className="flex gap-1 flex-wrap">
 						{tags?.map((tag) => (
-							<span className="bg-teal-700 w-fit rounded-full text-xs text-white px-2 py-1 ">
+							<span className="bg-teal-600 w-fit rounded-full text-xs text-white px-2 py-1 ">
 								{tag}
 							</span>
 						))}

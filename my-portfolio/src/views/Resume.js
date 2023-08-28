@@ -4,6 +4,7 @@ import {
 	Accordion,
 	Card,
 	ProgressBar,
+	Navbar,
 } from "components";
 
 const Resume = () => {
@@ -38,50 +39,61 @@ const Resume = () => {
 	];
 	return (
 		<Layout title="My resume">
-			<div className="p-4">
-				<Card customClasses="flex justify-between items-center gap-2 ">
-					<h1 className="text-sm md:text-base">Click to download my CV</h1>
-					<DownloadButton />
-				</Card>
-			</div>
-			<div className="p-4">
-				<div className="mb-8">
-					<h1 className="text-lg font-semibold mb-4">
-						Relevant Work Experiences:
-					</h1>
-					{experiences.map(({ title, summary, tags }) => (
-						<Accordion
-							key={title}
-							title={title}
-							content={summary}
-							tags={tags}
-						/>
-					))}
-				</div>
-				<div className="mb-8">
-					<h1 className="text-lg font-semibold mb-4">Education:</h1>
-					<Card>
-						<p className="font-semibold">
-							Bachelor of Science: Materials Engineering
-						</p>
-						<h1 className="text-sm">
-							Imam Khomeini International University (IKIU), Qazvin Iran,
-							September 2007 - April 2012
-						</h1>
-					</Card>
+			<div className="min-h-screen flex flex-col bg-slate-800">
+				<div className="mb-4">
+					<Navbar />
 				</div>
 				<div>
-					<h1 className="text-lg font-semibold mb-4">Main Technical Skills:</h1>
-					<div className="grid grid-cols-2 md:grid-cols-3">
-						<ProgressBar percent="90" label="JavaScript" />
-						<ProgressBar percent="80" label="TypeScript" />
-						<ProgressBar percent="90" label="React" />
-						<ProgressBar percent="95" label="CSS" />
-						<ProgressBar percent="90" label="styled-components" />
-						<ProgressBar percent="70" label="Next.js" />
-						<ProgressBar percent="80" label="React testing library" />
-						<ProgressBar percent="70" label="Redux toolkit" />
-						<ProgressBar percent="75" label="Git" />
+					<div className="p-4">
+						<Card customClasses="flex justify-between items-center gap-2 ">
+							<h1 className="text-sm md:text-base">Click to download my CV</h1>
+							<DownloadButton />
+						</Card>
+					</div>
+					<div className="p-4">
+						<div className="mb-8">
+							<h1 className="text-lg font-semibold mb-4 text-slate-50">
+								Relevant Work Experiences:
+							</h1>
+							{experiences.map(({ title, summary, tags }) => (
+								<Accordion
+									key={title}
+									title={title}
+									content={summary}
+									tags={tags}
+								/>
+							))}
+						</div>
+						<div className="mb-8">
+							<h1 className="text-lg font-semibold mb-4 text-slate-50">
+								Education:
+							</h1>
+							<Card>
+								<p className="font-semibold">
+									Bachelor of Science: Materials Engineering
+								</p>
+								<h1 className="text-sm">
+									Imam Khomeini International University (IKIU), Qazvin Iran,
+									September 2007 - April 2012
+								</h1>
+							</Card>
+						</div>
+						<div>
+							<h1 className="text-lg font-semibold mb-4 text-slate-50">
+								Main Technical Skills:
+							</h1>
+							<div className="grid grid-cols-2 md:grid-cols-3">
+								<ProgressBar percent="90" label="JavaScript" />
+								<ProgressBar percent="80" label="TypeScript" />
+								<ProgressBar percent="90" label="React" />
+								<ProgressBar percent="95" label="CSS" />
+								<ProgressBar percent="90" label="styled-components" />
+								<ProgressBar percent="70" label="Next.js" />
+								<ProgressBar percent="80" label="React testing library" />
+								<ProgressBar percent="70" label="Redux toolkit" />
+								<ProgressBar percent="75" label="Git" />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

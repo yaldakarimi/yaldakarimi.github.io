@@ -3,7 +3,7 @@ import { SocialLinks, CustomNavLink } from "components";
 const Navbar = ({ navLinkColor, color }) => {
 	const navLinkActiveClasses =
 		"active text-pink-700 border-b-2 border-pink-700 pb-2 font-bold";
-	const navLinkInactiveClasses = `text-slate-300 hover:text-slate-400 ${
+	const navLinkInactiveClasses = `text-slate-200 hover:text-slate-400 ${
 		!!navLinkColor && navLinkColor
 	}`;
 

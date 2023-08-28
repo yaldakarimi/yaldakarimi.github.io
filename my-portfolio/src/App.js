@@ -1,17 +1,11 @@
 import About from "./views/About";
 import Resume from "views/Resume";
 import Home from "views/Home";
-import { Routes, Route, useLocation } from "react-router-dom";
-import { Navbar } from "components";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
-	const location = useLocation();
-
 	return (
 		<div>
-			{location.pathname !== "/" && (
-				<Navbar navLinkColor="text-slate-800" color="text-slate-800" />
-			)}
 			<div>
 				<Routes>
 					<Route path="/" element={<Home />} />
